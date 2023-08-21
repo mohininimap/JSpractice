@@ -1,0 +1,28 @@
+When we execute a function 
+----------------------------
+call stack->Global Execution Context->Memory|Code
+-----------------
+Variable and functions created lexical envoronment also created
+Lexical envoronment is a local memory along with lexical environment of parent
+----------------------
+function a(){
+    var b=10;
+    c();
+    function c(){
+
+    }
+}
+a();
+console.log(b)
+ c is lexically sitting inside a function
+ a is lexically sitting in global context
+ lexical environment of parent
+ scope chain->Lexical envoronment of parent chain
+ Lexical Environment=>local memory plus lexical envorinment of parent
+-----------------------
+ Lexical environment->Lexical environment created when execution environment is created
+ lexical environment is local memory plus lexical environment of parent
+ ->The chain of lexical environment is a scope chain
+ ->If the scope chain is axosted and if variable is not found
+ -------------
+a->local memory of a plus lexical environment of parent i.e.global
