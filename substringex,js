@@ -1,0 +1,3 @@
+const originalString = "Hello, World!";
+const substr=originalString.substring(0,5);
+console.log(substr)
